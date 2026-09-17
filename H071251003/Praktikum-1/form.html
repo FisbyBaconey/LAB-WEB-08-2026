@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PantaiPanjang/formulir</title>
+</head>
+<body>
+    <header>
+        <center>
+        <p>Selamat datang di</p>
+        <h1>PANTAI PANJANG</h1>
+        </center>
+    </header>
+    <nav>
+        <center>
+            <a href="index.html">Beranda</a> | <a href="feature.html">Fasilitas</a> | <a href="review.html" target="_blank">Formulir</a> | <a href="review.html">Ulasan</a>
+            <hr>
+        </center>
+    </nav>
+    <main>
+        <p></p>
+        <form action="#" method="POST" id="orderForm">
+            <fieldset>
+                <legend><strong>Booking Wisata:</strong></legend>
+                <label for="namaInp">Nama:</label>
+                <input type="text" id="namaInp" placeholder="Nama Lengkap" name="ama" required>*
+                <p></p>
+                <label for="emailInp">Email:</label>
+                <input type="email" id="emailInp" placeholder="Email" required>*
+                <p></p>
+                <label for="HPInp">Nomor HP:</label>
+                <input type="tel" id="HPInp" placeholder="08XXXXXXXXXX" required>*
+                <p></p>
+                <label for="TamuInp">Tamu:</label>
+                <input type="number" min="1" id="TamuInp" placeholder="Jumlah Tamu" required>*
+                <p></p>
+                <label for="ReservInp1">Waktu Reservasi:</label>
+                <input type="date" id="ReservInp1" required>*
+                <p></p>
+                <label for="ReservInp2">Jam Reservasi:</label>
+                <select name="Waktu" id="ReservInp2" required>
+                    <option value="">--N/A--</option>
+                    <option value="08:00">08:00 WITA</option>
+                    <option value="12:00">12:00 WITA</option>
+                    <option value="16:00">16:00 WITA</option>
+                    <option value="20:00">20:00 WITA</option>
+                </select>*
+                <p></p>
+                <label for="notesInp">Catatan:</label><br>
+                <textarea name="Notes" id="notesInp" rows="5" cols="35" placeholder="Bila ada catatan tambahan, dapat ditulis disini"></textarea><p></p>
+                <!-- <label for="DeliverInp">Pengirirman:</label>
+                    <div id="DeliverInp">
+                        <input type="radio" id="JNE Express" name="Deliver" value="JNE Express">
+                        <label for="JNE Express">JNE Express</label><br>
+                        <input type="radio" id="Lion Parcel" name="Deliver" value="Lion Parcel">
+                        <label for="Lion Parcel">Lion Parcel</label><br>
+                        <input type="radio" id="Kantor Pos" name="Deliver" value="Kantor Pos">
+                        <label for="Kantor Pos">Kantor Pos</label><br>
+                        <input type="radio" id="J&T Express" name="Deliver" value="J&T Express">
+                        <label for="J&T Express">J&T Express</label><br>
+                        <input type="radio" id="Sicepat Express" name="Deliver" value="Sicepat Express">
+                        <label for="Sicepat Express">Sicepat Express</label><p></p>
+                    </div> -->
+                <button type="submit">Booking</button>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <hr>
+        <div id="kontak">
+            <h3>Kontak Kami:</h3>
+            <a href="tel:+6283240827761">Telepon</a><p></p>
+            <a href="mailto:cumetesaja@gmail.com">Email</a><p></p>
+            <a href="https://www.instagram.com/pantaipanjangbengkulu/">Instagram</a><p></p>
+        </div>
+        <center>
+            <p>&copy; Pantai Panjang 2026. All rights reserved</p>
+        </center>
+    </footer>
+</body>
+</html>
