@@ -1,0 +1,29 @@
+main p{
+    text-wrap-style: balance;
+    font-size: larger;
+    line-height: 2.0;
+    text-indent: 50px;
+    margin: 20px;
+    max-width: 750px;
+}
+.scrollable{
+
+    background-color: rgb(103, 163, 241);
+    overflow: auto;
+    white-space: nowrap;
+    padding: 5px;
+}
+.scrollable img{
+    padding: 2px;
+}
+.map{
+    margin: 10px 10px 10px 0px;
+    padding: 0px 5px 0px 5px;
+    width: fit-content;
+    border: 2px solid rgb(103, 163, 241);
+    /* background: -moz-linear-gradient(0deg, rgb(103, 163, 241, rgb(57, 117, 196))); */
+    background-color: rgb(103, 163, 241);
+}
+.map strong{
+    font-size: 15px;
+}

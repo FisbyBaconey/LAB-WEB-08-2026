@@ -1,0 +1,85 @@
+/* #bg{
+    background: #f0f0f0 url('image.jpg') center center;
+    position: absolute;
+    width: 100%;
+    height: 00%;
+    background-image: url('media/Background_extra.png');
+    background-repeat: no-repeat;
+    background-size: fill;
+    opacity: 0.2;
+} */
+body{
+    font-family: system-ui;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: linear-gradient(0deg, #d6e8ffab, #d6e8ffab), url(/Praktikum-2/media/Background_extra.png);
+    background-position:center;
+    /* background-image: url(/Praktikum-2/media/Background_extra.png); */
+    backdrop-filter: blur(10px);
+    background-repeat: no-repeat;
+    background-size:cover;
+    justify-content: center;
+    line-height: 1.5;
+}
+header p{
+    margin: 20px 0px 0px 0px;
+    font-size: 25px;
+}
+body .headNav {
+    margin: 10px 0px 10px 0px;
+    background: linear-gradient(0deg, #a0c9ff, #dbe6ff00);
+    /* background-image: url(media/Banner.jpeg); */
+    background-size: contain;
+    text-align: center;
+    color: rgb(20, 4, 59);
+    border-bottom: 4px dashed #30528181;
+
+}
+.headNav h1{
+    font-size: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-shadow: 0px 4px 5px #30528181;
+}
+nav a{
+    font-size: 20px;
+    padding: 5px;
+    margin:0px 50px 10px;
+    width:160px;
+    height: 40px;
+    display:inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(0deg, rgb(103, 163, 241),rgba(103, 163, 241, 0.132));
+    border-radius: 5px;
+}
+a:link{
+    color: black;
+}
+a:hover{
+    color: whitesmoke;
+    background-color: #305281;
+}
+a:visited{
+    color: blue;
+}
+footer{
+    border-top: 4px dashed #30528181;
+    margin: 10px 0px 10px 0px;
+    background: linear-gradient(0deg, #dbe6ff00, #a0c9ff);
+}
+footer h3{
+    font-size: 30px;
+    padding: 10px 10px 10px 20px;
+    margin:0px 0px 10px;
+}
+footer a{
+    font-size: 20px;
+    padding: 10px 10px 10px 15px;
+    margin:0px 4px 10px;
+    width:140px;
+    height: 30px;
+}
+footer p{
+    text-align: center;
+    opacity: 0.4;
+}

@@ -1,0 +1,18 @@
+body{
+    font-size:larger;
+}
+#BookingForm input, select, textarea, button{
+    font-size: large;
+    height: 30px;
+}
+textarea{
+    width: 100%;
+    height: fit-content;
+    font-size: larger;
+    box-sizing: border-box;
+}
+#BookingForm button{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
