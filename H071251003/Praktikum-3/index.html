@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SECUREN'T</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-slate-900 text-slate-100 font-sans min-h-screen flex flex-col relative">
+
+    <header class="relative bg-slate-800 border-b border-slate-700 flex flex-col justify-between min-h-80 overflow-hidden">
+        <div class="absolute inset-0 pointer-events-none overflow-hidden">
+            <img src="media/Banner1.png" alt="headerBG" class="w-full h-full object-cover opacity-40">
+        </div>
+
+        <div class="relative px-6 py-12 md:px-12 max-w-7xl w-full flex flex-col justify-center">
+            <h1 class="text-4xl md:text-6xl font-black text-white">
+                SECUREN'T
+            </h1>
+            <p class="text-slate-300 font-medium mt-2 md:text-xl">
+                we do<span class="font-extralight text-sm text-transparent">nt</span>care about your safety
+            </p>
+        </div>
+
+    </header>
+    <nav class="sticky top-0 z-40 bg-slate-900 backdrop-blur-md border-t border-b border-slate-700 text-slate-200 font-semibold">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex flex-wrap items-center justify-between gap-4">
+            <div class="flex items-center gap-3">
+                <img name="logo" src="media/logo.webp" alt="Logo" class="w-10 h-10 bg-white p-1 rounded-full flex items-center justify-center object-cover">
+                <span class="font-bold text-lg text-white hidden sm:inline">SECUREN'T</span>
+            </div>
+            <div class="flex flex-wrap items-center gap-4 md:gap-8 text-sm md:text-base">
+                <a href="#about" class="hover:text-blue-400">Tentang</a>
+                <a href="#benefits" class="hover:text-blue-400">Manfaat</a>
+                <a href="#packages" class="hover:text-blue-400">Pilihan</a>
+                <a href="#testimoni" class="hover:text-blue-400">Testimoni</a>
+                <a href="#subscribe" class="hover:text-blue-400">Kontak</a>            
+                <a href="#" class="hover:text-blue-400 mx-5 p-2 bg-blue-600 rounded-lg min-w-fit w-20 flex justify-center align-middle">Login</a>            
+
+            </div>
+        </div>
+    </nav>
+    
+    <main class="flex-grow space-y-16 md:space-y-24 py-12 max-w-7xl mx-auto px-6 w-full">
+
+        <section id="about" class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center bg-slate-800 p-6 md:p-10 rounded-2xl border border-slate-700">
+            <div class="flex flex-col justify-between h-full space-y-6">
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">JANGAN JADI CEWEK INI!</h2>
+                    <p class="text-slate-300 leading-relaxed md:text-lg">
+                        Tidak berhati-hati dalam internet dapat menyebabkan kerugian pada perangkat dan datamu sendiri. Datamu dapat diretas, dihapus, dan bahkan digunakan sebagai pinjol oleh pihak peretas. Dengan berlangganan dengan layanan anti-Virus kami, anda tak perlu khawatir lagi dengan data anda!
+                    </p>
+                </div>
+                <div>
+                    <a href="#packages" class="bg-blue-600 hover:bg-blue-500 text-white font-semibold px-6 py-3 rounded-lg hover:shadow-blue-500">
+                        Langganan Sekarang
+                    </a>
+                </div>
+            </div>
+            <div class="w-full h-64 md:h-80 bg-slate-900 border rounded-xl flex items-center justify-center overflow-hidden">
+                <img src="media/picture_1.jpg" alt="About_Image" class="w-full h-full object-cover ">
+            </div>
+        </section>
+
+        <section id="benefits" class="space-y-6 text-center">
+            <h2 class="text-2xl md:text-3xl font-bold text-white tracking-wide">Learn the benefit!</h2>
+            <div class="grid grid-cols-1 md:grid-rows-3 gap-6 text-left">
+                <div class="p-5 bg-slate-800 rounded-xl border border-slate-700">
+                    <h3 class="font-bold text-blue-400 mb-2 text-lg">Proteksi Instan</h3>
+                    <p class="text-slate-300 text-sm leading-relaxed">Perlindungan Internet dengan instan. Email spam dan telpon scam sudah tidak ada lagi</p>
+                </div>
+                <div class="p-5 bg-slate-800 rounded-xl border border-slate-700">
+                    <h3 class="font-bold text-blue-400 mb-2 text-lg">Akses 24/7</h3>
+                    <p class="text-slate-300 text-sm leading-relaxed">Dukungan penuh sepanjang hari tanpa henti untuk segala kebutuhan Anda.</p>
+                </div>
+                <div class="p-5 bg-slate-800 rounded-xl border border-slate-700">
+                    <h3 class="font-bold text-blue-400 mb-2 text-lg">Fleksibilitas Tinggi</h3>
+                    <p class="text-slate-300 text-sm leading-relaxed">Pilih layanan yang cocok dengan skala prioritas dan kebutuhan spesifik Anda.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="packages" class="space-y-6">
+            <h2 class="text-2xl md:text-3xl font-bold text-white text-center">Pilihan Langganan</h2>
+            <div class="flex overflow-x-auto gap-6 pb-6 pt-2 snap-x justify-center">
+                
+                <div class=" shrink-0 w-80 bg-slate-800 border border-slate-700 rounded-xl p-6 flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold text-white text-center uppercase tracking-wider">BASIC PROTECT</h3>
+                        <h4 class="text-lg font-bold text-white/70 border-b border-slate-700 pb-3 text-center uppercase tracking-wider">RP. 89,900</h4>
+                        <ul class="my-6 space-y-3 text-slate-300 text-sm">
+                            <li class="border-b border-slate-700 pb-2">- short benefit I</li>
+                            <li class="border-b border-slate-700 pb-2">- short benefit II</li>
+                            <li class="border-b border-slate-700 pb-2">- short benefit III</li>
+                        </ul>
+                    </div>
+                    <a href="checkout.html" class="w-full bg-blue-600 hover:bg-blue-500 text-white font-bold py-2.5 px-4 rounded-lg border border-slate-600 flex justify-center">
+                        Choose
+                    </a>
+                </div>
+
+                <div class=" shrink-0 w-80 bg-slate-800 border border-slate-700 rounded-xl p-6 flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold text-white text-center uppercase tracking-wider">SUPER PROTECT</h3>
+                        <h4 class="text-lg font-bold text-white/70 border-b border-slate-700 pb-3 text-center uppercase tracking-wider">RP. 139,900</h4>
+                        <ul class="my-6 space-y-3 text-slate-300 text-sm">
+                            <li class="border-b border-slate-700 pb-2">- short benefit I</li>
+                            <li class="border-b border-slate-700 pb-2">- short benefit II</li>
+                            <li class="border-b border-slate-700 pb-2">- short benefit III</li>
+                        </ul>
+                    </div>
+                    <a href="checkout.html" class="w-full bg-blue-600 hover:bg-blue-500 text-white font-bold py-2.5 px-4 rounded-lg border border-slate-600 transition-colors flex justify-center">
+                        Choose
+                    </a>
+                </div>
+
+                <div class="shrink-0 w-80 bg-slate-800 border border-slate-700 rounded-xl p-6 flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold text-white text-center uppercase tracking-wider">ULTRA PROTECT</h3>
+                        <h4 class="text-lg font-bold text-white/70 border-b border-slate-700 pb-3 text-center uppercase tracking-wider">RP. 209,900</h4>
+                        <ul class="my-6 space-y-3 text-slate-300 text-sm">
+                            <li class="border-b border-slate-700 pb-2">- short benefit I</li>
+                            <li class="border-b border-slate-700 pb-2">- short benefit II</li>
+                            <li class="border-b border-slate-700 pb-2">- short benefit III</li>
+                        </ul>
+                    </div>
+                    <a href="checkout.html" class="w-full bg-blue-600 hover:bg-blue-500 text-white font-bold py-2.5 px-4 rounded-lg border border-slate-600  flex justify-center">
+                        Choose
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="testimoni" class="space-y-6">
+            <h2 class="text-2xl md:text-3xl font-bold text-white text-center">APA PENDAPAT MEREKA?</h2>
+            
+            <div class="flex overflow-x-auto gap-6 pb-6 pt-2 justify-center">
+                <div class="snap-center shrink-0 w-72 md:w-80 bg-slate-800 p-5 rounded-xl border border-slate-700 space-y-2">
+                    <h4 class="font-bold text-white">User 1</h4>
+                    <div class="text-amber-400 font-bold text-sm">★★★★★</div>
+                    <p class="text-slate-300 text-sm italic">"lorem ipsum dolor sit amet, consectetur adipiscing elit."</p>
+                </div>
+
+                <div class="snap-center shrink-0 w-72 md:w-80 bg-slate-800/90 p-5 rounded-xl border border-slate-700 space-y-2">
+                    <h4 class="font-bold text-white">User 2</h4>
+                    <div class="text-amber-400 font-bold text-sm">★★★★★</div>
+                    <p class="text-slate-300 text-sm italic">"lorem ipsum dolor sit amet, consectetur adipisicing elit."</p>
+                </div>
+
+                <div class="snap-center shrink-0 w-72 md:w-80 bg-slate-800 p-5 rounded-xl border border-slate-700 space-y-2">
+                    <h4 class="font-bold text-white">User 3</h4>
+                    <div class="text-amber-400 font-bold text-sm">★★★★★</div>
+                    <p class="text-slate-300 text-sm italic">"lorem ipsum dolor sit amet, corrupti harum eos."</p>
+                </div>
+            </div>
+
+            <div class="text-center pt-2">
+                <a href="testimony.html" class="bg-slate-800 hover:bg-slate-700 text-slate-200 font-bold py-2 px-6 rounded-lg border border-slate-600">
+                    baca lebih lanjut
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="subscribe" class="bg-slate-950 border-t border-slate-800 pt-12 pb-24 md:pb-12 px-6 text-slate-300">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-end mb-8">
+            
+            <div class="space-y-3">
+                <label for="email" class="block font-medium text-slate-200 text-base">
+                    Dengarkan berita dan penawaran terbaru kami!
+                </label>
+                <form onsubmit="" class="flex flex-col sm:flex-row gap-3 max-w-md">
+                    <input 
+                        type="email" 
+                        id="email" 
+                        placeholder="insert email here" 
+                        class="px-4 py-2 bg-slate-900 border border-slate-700 rounded-lg focus:outline-none focus:border-blue-500 text-slate-100 flex-grow"
+                    >
+                    <button 
+                        type="submit" 
+                        class="bg-blue-600 hover:bg-blue-500 text-white font-bold px-6 py-2 rounded-lg"
+                    >
+                        submit
+                    </button>
+                </form>
+            </div>
+
+            <div class="flex justify-start md:justify-end gap-4">
+                <a href="https://id.linkedin.com/company/mcafee" aria-label="Social Media 1" class="w-12 h-12 bg-slate-800 hover:bg-slate-700 border border-slate-600 rounded flex items-center justify-center font-bold text-xs overflow-hidden">
+                    <img src="media/icon_linkedin.png" alt="sosmed" class="w-full h-full object-contain p-2">
+                </a>
+                <a href="mailto:cumetesaja@gmail.com" aria-label="Social Media 2" class="w-12 h-12 bg-slate-800 hover:bg-slate-700 border border-slate-600 rounded flex items-center justify-center font-bold text-xs overflow-hidden">
+                    <img src="media/icon_email.png" alt="sosmed" class="w-full h-full object-contain p-2">
+                </a>
+                <a href="https://x.com/McAfee" aria-label="Social Media 3" class="w-12 h-12 bg-slate-800 hover:bg-slate-700 border border-slate-600 rounded flex items-center justify-center font-bold text-xs overflow-hidden">
+                    <img src="media/icon_twitter.png" alt="sosmed" class="w-full h-full object-contain p-2 bg-blend-exclusion">
+                </a>
+            </div>
+        </div>
+
+        <div class=" border-t border-slate-800 pt-6 flex flex-col sm:flex-row justify-center items-center gap-4 text-xs text-slate-400">
+            <p>&copy;Securen't 2026. All rights reserved</p>
+            <div class="flex gap-6">
+                <a href="#" class="hover:text-blue-400">Syarat & Ketentuan (Terms of Service)</a>
+                <a href="#" class="hover:text-blue-400">Kebijakan Privasi</a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="fixed bottom-5 right-5 z-50 bg-slate-800 border border-blue-500 text-slate-100 px-4 py-3 rounded-xl flex items-center gap-3 max-w-x">
+        <div class="w-15 h-15 bg-slate-700 border border-slate-600 rounded-full shrink-0 overflow-hidden flex items-center justify-center">
+            <img src="media/icon_Service.webp" alt="Customer Service" class="w-full h-full object-cover">
+        </div>
+        <div class="text-xs">
+            <p class="font-bold uppercase tracking-wider text-blue-400">LAYANAN KOMSUMER</p>
+            <p class="text-slate-300 font-medium">Telepon bila perlu bantuan!</p>
+        </div>
+    </div>
+
+</body>
+</html>

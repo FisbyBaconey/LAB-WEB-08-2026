@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SECUREN'T - Checkout & Pembayaran</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-slate-900 text-slate-100 font-sans min-h-screen flex flex-col relative">
+
+    <header class="relative bg-slate-800 border-b border-slate-700 flex flex-col justify-center min-h-80 overflow-hidden">
+        <div class="absolute inset-0 pointer-events-none overflow-hidden">
+            <img src="media/Banner1.png" alt="headerBG" class="w-full h-full object-cover opacity-40" style="-webkit-mask-image: linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%); mask-image: linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);">
+        </div>
+
+        <div class="relative z-10 px-6 py-12 md:px-12 max-w-7xl mx-auto w-full flex flex-col justify-center">
+            <h1 class="text-4xl md:text-6xl font-black tracking-tight text-white drop-shadow-md">
+                SECUREN'T
+            </h1>
+            <p class="text-slate-300 font-medium mt-2 md:text-xl tracking-wide">
+                we do<span class="font-extralight text-sm text-transparent">nt</span>care about your safety
+            </p>
+        </div>
+    </header>
+
+    <nav class="sticky top-0 z-40 bg-slate-900/90 backdrop-blur-md border-b border-slate-700 text-slate-200 font-semibold shadow-md">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex flex-wrap items-center justify-between gap-4">
+            <div class="flex items-center gap-3">
+                <img name="logo" src="media/logo.webp" alt="Logo" class="w-10 h-10 flex items-center justify-center object-cover rounded">
+                <span class="font-bold text-lg tracking-wider text-white hidden sm:inline">SECUREN'T</span>
+            </div>
+            <div class="flex flex-wrap items-center gap-4 md:gap-8 text-sm md:text-base">
+                <a href="index.html#about" class="hover:text-blue-400 transition-colors">Tentang</a>
+                <a href="index.html#benefits" class="hover:text-blue-400 transition-colors">Manfaat</a>
+                <a href="index.html#packages" class="hover:text-blue-400 transition-colors">Pilihan</a>
+                <a href="testimoni.html" class="hover:text-blue-400 transition-colors">Testimoni</a>
+                <a href="#subscribe" class="hover:text-blue-400 transition-colors">Kontak</a>            
+            </div>
+        </div>
+    </nav>
+
+    <main class="flex-grow max-w-7xl mx-auto px-6 py-12 w-full">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+            
+            <div class="lg:col-span-7 space-y-10">
+                
+                <div class="space-y-4 bg-slate-800/60 p-6 md:p-8 rounded-2xl border border-slate-700 shadow-lg">
+                    <div class="flex items-center gap-3">
+                        <h2 class="text-2xl font-bold text-white">1. Email</h2>
+                        <span class="text-slate-400 border border-slate-600 rounded-full w-5 h-5 flex items-center justify-center text-xs font-serif cursor-pointer hover:border-blue-400 hover:text-blue-400 transition-colors" title="Informasi Email">i</span>
+                    </div>
+
+                    <form onsubmit="return false;" class="space-y-6">
+                        <div>
+                            <label for="checkout-email" class="sr-only">Email</label>
+                            <input 
+                                type="email" 
+                                id="checkout-email" 
+                                placeholder="Email" 
+                                class="w-full px-4 py-3 bg-slate-900 border border-slate-700 rounded-xl focus:outline-none focus:border-blue-500 text-slate-100 placeholder-slate-500 text-base"
+                            >
+                        </div>
+
+                        <div class="flex justify-end">
+                            <button 
+                                type="button" 
+                                class="bg-blue-600 hover:bg-blue-500 text-white font-bold px-8 py-3 rounded-full transition-colors shadow-md text-sm md:text-base"
+                            >
+                                Continue to payment
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="space-y-4 bg-slate-800/60 p-6 md:p-8 rounded-2xl border border-slate-700 shadow-lg">
+                    <div class="flex items-center justify-between border-b border-slate-700/80 pb-4">
+                        <div class="flex items-center gap-3">
+                            <h2 class="text-2xl font-bold text-slate-400">2. Payment</h2>
+                            <span class="text-slate-500 text-lg">🔒</span>
+                        </div>
+                        
+                        <div class="flex items-center gap-2">
+                            <div class="px-2 py-1 bg-slate-900 border border-slate-700 rounded text-xs font-bold text-slate-300">VISA</div>
+                            <div class="px-2 py-1 bg-slate-900 border border-slate-700 rounded text-xs font-bold text-slate-300">MC</div>
+                            <div class="px-2 py-1 bg-slate-900 border border-slate-700 rounded text-xs font-bold text-slate-300">AMEX</div>
+                        </div>
+                    </div>
+
+                    <p class="text-sm text-slate-400 italic">
+                        Lengkapi langkah email di atas untuk membuka opsi metode pembayaran.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="lg:col-span-5">
+                <div class="bg-slate-800 border border-slate-700 rounded-2xl p-6 md:p-8 shadow-xl space-y-6 sticky top-24">
+                    
+                    <div class="flex justify-between items-start gap-4">
+                        <div>
+                            <h3 class="text-xl md:text-2xl font-extrabold text-white">
+                                SECUREN'T Anti-Virus
+                            </h3>
+                            <p class="text-slate-300 font-medium text-sm mt-1">10 Perangkat</p>
+                            <p class="text-slate-400 text-sm">Langganan 2 Tahun</p>
+                        </div>
+                        <div class="text-right shrink-0">
+                            <span class="text-2xl font-black text-white block">Rp300,000</span>
+                            <span class="text-xs font-bold text-emerald-400 block mt-1">
+                                Diskon <br><span class="italic font-normal">45%</span> untuk pelanggan baru!
+                            </span>
+                        </div>
+                    </div>
+
+                    <div>
+                        <a href="index.html#packages" class="inline-flex items-center justify-between gap-2 px-4 py-2 bg-slate-900 hover:bg-slate-950 border border-slate-700 rounded-lg text-sm text-slate-200 font-medium transition-colors">
+                            <span>Ganti Pkaet</span>
+                            <span>▼</span>
+                        </a>
+                    </div>
+
+                    <hr class="border-slate-700">
+
+                    <div class="space-y-4 text-xs md:text-sm text-slate-300 leading-relaxed">
+                        <h4 class="font-bold text-white text-base">Subscription and Renewal Details</h4>
+                        <ul class="list-disc pl-5 space-y-3 marker:text-slate-500">
+                            <li>
+                                Stay ahead of the latest threats with up-to-date security by keeping auto-renewal turned on.
+                            </li>
+                            <li>
+                                Your subscription will automatically renew 30 days before the end of your term at the renewal price in effect (currently Rp800.000/yr price subject to change).
+                            </li>
+                            <li>
+                                We'll email you a reminder in advance. You can turn off auto-renewal at any time before it renews from <a href="#" class="text-blue-400 underline hover:text-blue-300">My Account</a>. Full refunds are available within 30 days of initial purchase or 60 days of auto-renewal. For additional information see the <a href="#" class="text-blue-400 underline hover:text-blue-300">Refund Policy</a>.
+                            </li>
+                            <li>
+                                See our <a href="#" class="text-blue-400 underline hover:text-blue-300 font-semibold">full offer details</a>.
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer id="subscribe" class="bg-slate-950 border-t border-slate-800 pt-12 pb-12 px-6 text-slate-300">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-end mb-8">
+            
+            <div class="space-y-3">
+                <label for="email" class="block font-medium text-slate-200 text-base">
+                    Dengarkan berita dan penawaran terbaru kami!
+                </label>
+                <form onsubmit="return false;" class="flex flex-col sm:flex-row gap-3 max-w-md">
+                    <input 
+                        type="email" 
+                        id="email" 
+                        placeholder="insert email here" 
+                        class="px-4 py-2 bg-slate-900 border border-slate-700 rounded-lg focus:outline-none focus:border-blue-500 text-slate-100 flex-grow"
+                    >
+                    <button 
+                        type="submit" 
+                        class="bg-blue-600 hover:bg-blue-500 text-white font-bold px-6 py-2 rounded-lg transition-colors shadow-md"
+                    >
+                        submit
+                    </button>
+                </form>
+            </div>
+
+            <div class="flex justify-start md:justify-end gap-4">
+                <a href="https://id.linkedin.com/company/mcafee" aria-label="Social Media 1" class="w-12 h-12 bg-slate-800 hover:bg-slate-700 border border-slate-600 rounded flex items-center justify-center font-bold text-xs shadow-sm transition-colors overflow-hidden">
+                    <img src="media/icon_linkedin.png" alt="sosmed" class="w-full h-full object-contain p-2">
+                </a>
+                <a href="mailto:cumetesaja@gmail.com" aria-label="Social Media 2" class="w-12 h-12 bg-slate-800 hover:bg-slate-700 border border-slate-600 rounded flex items-center justify-center font-bold text-xs shadow-sm transition-colors overflow-hidden">
+                    <img src="media/icon_email.png" alt="sosmed" class="w-full h-full object-contain p-2">
+                </a>
+                <a href="https://x.com/McAfee" aria-label="Social Media 3" class="w-12 h-12 bg-slate-800 hover:bg-slate-700 border border-slate-600 rounded flex items-center justify-center font-bold text-xs shadow-sm transition-colors overflow-hidden">
+                    <img src="media/icon_twitter.png" alt="sosmed" class="w-full h-full object-contain p-2">
+                </a>
+            </div>
+        </div>
+
+        <!-- Copyright & Terms of Service Links -->
+        <div class="max-w-7xl mx-auto border-t border-slate-800/80 pt-6 flex flex-col sm:flex-row justify-center items-center gap-4 text-xs text-slate-400">
+            <p>copyright. all rights reserved</p>
+            <div class="flex gap-6">
+                <a href="#" class="hover:text-blue-400 transition-colors">Syarat & Ketentuan (Terms of Service)</a>
+                <a href="#" class="hover:text-blue-400 transition-colors">Kebijakan Privasi</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
