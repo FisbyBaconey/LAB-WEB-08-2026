@@ -22,17 +22,22 @@ export default function KatalogPage() {
         </p>
       </div>
 
-      <div className="flex flex-wrap gap-2 mb-8">
-        {kategoriList.map((kat) => (
-          <button
-            key={kat}
-            onClick={() => setKategoriAktif(kat)}
-            className={`px-4 py-2 rounded-lg text-sm font-medium transition ${kategoriAktif === kat ? "bg-amber-600 text-white" : "bg-slate-900 border border-slate-800 text-slate-300 hover:bg-slate-800"
-            }`}
-          >
-            {kat}
-          </button>
-        ))}
+      <div className="flex flex-col mb-8">
+        <div className="flex flex-row flex-wrap gap-2 ">
+          {kategoriList.map((kat) => (
+            <button
+              key={kat}
+              onClick={() => setKategoriAktif(kat)}
+              className={`px-4 py-2 rounded-lg text-sm font-medium transition ${kategoriAktif === kat ? "bg-amber-600 text-white" : "bg-slate-900 border border-slate-800 text-slate-300 hover:bg-slate-800"
+              }`}
+            >
+              {kat}
+            </button>
+          ))}
+        </div>
+        <span>
+          Menampilkan {bukuFiltered.length} dari {dataBuku.length} buku
+        </span>
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
@@ -45,7 +50,7 @@ export default function KatalogPage() {
             kategori={buku.kategori}
             tahun={buku.tahun}
             tersedia={buku.tersedia}
-            cover={buku.cover} // <-- Tambahkan ini
+            cover={buku.cover}
         />
         ))}
     </div>
