@@ -1,0 +1,19 @@
+#tab_Intro{
+    font-size: x-large;
+    text-indent: 20px;
+    margin: 20px 0px;
+    font-weight: 1000;
+
+}
+#List-Fasilitas p{
+    margin: 0px 20px;
+    line-height: 2;
+    text-indent: 30px;
+    max-width: 400px;
+}
+#List-Fasilitas h3{
+    text-indent: 20px;
+}
+img{
+    border: 5px dotted whitesmoke;
+}

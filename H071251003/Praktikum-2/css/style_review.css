@@ -1,0 +1,116 @@
+.C_Body_L{
+    padding: 10px;
+    border: 0px;
+    border-radius: 10px;
+    background: linear-gradient(0deg, rgb(60, 84, 116, 0.5),rgba(68, 105, 148, 0.5));
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    align-items: flex-start;
+    left: 0px;
+    width: fit-content;
+    max-width: 900px;
+    box-sizing: border-box;
+}
+.buttons button{
+    margin: 0px 3px 5px 3px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px rgb(39, 139, 105);
+    border-style:ridge;
+    background-color: aquamarine;
+}
+.buttons button:hover{
+    background-color: rgb(16, 84, 61) ;
+    border-color: rgb(39, 139, 105);
+    color: aliceblue;
+}
+.C_Body_R{
+    padding: 10px;
+    border: 0px;
+    border-radius: 10px;
+    background: linear-gradient(0deg, rgba(142, 166, 197),rgba(161, 196, 237, 0.5));
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    align-items: flex-end;
+    left: 300px;
+    /* width: fit-content; */
+    max-width: 900px;
+    box-sizing: border-box;
+
+}
+.time{
+    position: absolute;
+    left: 15px;
+    opacity: 0.5;
+    font-size: small;
+}
+.ratingStar{
+    color:sandybrown;
+}
+.ComBox{
+    background: aliceblue;
+    border-radius: 10px;
+    border: 0px;
+}
+.c_art_tail_L{
+    position: relative;
+    left:50px;
+	width: 0;
+	height: 0;
+	border-left: 0px solid transparent;
+	border-right: 50px solid transparent;
+	border-top: 60px solid rgb(60, 84, 116, 0.5);
+}
+.c_art_tail_R{
+    position: relative;
+    left:1120px;
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 0px solid transparent;
+	border-top: 60px solid rgba(142, 166, 197);
+    box-sizing: border-box;
+}
+#sendComment fieldset{
+    border: 0px;
+    background: rgba(255, 255, 255, 0.6);
+    display: flex;
+    gap: 12px;
+    width:100%;
+    flex-direction: column;
+    align-items: stretch;
+    box-sizing: border-box;
+}
+#sendComment legend{
+    position: relative;
+    right: 12px;
+    font-size: x-large;
+    background: rgba(255, 255, 255);
+    padding: 0px 10px 0px 10px;
+}
+#sendComment #emailInp, #sendComment textarea{
+    font-size: 15px;
+    width: 100%;
+    padding: 5px 10px 5px 5px;
+    margin-bottom: 10px;
+    background-color: rgba(240, 248, 255, 0);
+    border-style: solid;
+    border: 5px 0px 5px 1px;
+    box-sizing: border-box
+}
+.rateScale{
+    -webkit-user-drag: none;
+    width: 200px;
+}
+#sendComment textarea{
+    font-size: 20px;
+}
+#sendComment button{
+    align-self: flex-start;
+    font-size: 20px;
+    padding: 5px 15px 5px 15px;
+}
